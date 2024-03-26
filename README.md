@@ -10,8 +10,41 @@
  <a href=''><img src='https://img.shields.io/badge/Project-Page-Green'></a>
  <a href=''><img src='https://img.shields.io/badge/UPEB-Arxiv-red'></a> 
 </p>
+</div>
 
 ## 🔥 <span id="head1"> *News* </span>
-* [2024/03/01] "**Visual PEFT Library/Benchmark**" repo is created.
+* ✅ [2024/03/01] "**Visual PEFT Library/Benchmark**" repo is created.
+
+
+
+
+## ⭐ <span id="head1"> *Citation* </span>
+
+If you find our survey and repository useful for your research, please cite it below:
+
+```bibtex
+
+@article{xin2024parameter,
+  title={Parameter-Efficient Fine-Tuning for Pre-Trained Vision Models: A Survey},
+  author={Xin, Yi and Luo, Siqi and Zhou, Haodi and Du, Junlong and Liu, Xiaohong and Fan, Yue and Li, Qing and Du, Yuntao},
+  journal={arXiv preprint arXiv:2402.02242},
+  year={2024}
+}
+
+@article{xin2023vmt,
+  title={VMT-Adapter: Parameter-Efficient Transfer Learning for Multi-Task Dense},
+  author={Xin, Yi and Du, Junlong and Wang, Qiang and Lin, Zhiwen and Yan, Ke},
+  journal={arXiv preprint arXiv:2312.08733},
+  year={2023}
+}
+
+@article{xin2023mmap,
+  title={MmAP: Multi-modal Alignment Prompt for Cross-domain Multi-task Learning},
+  author={Xin, Yi and Du, Junlong and Wang, Qiang and Yan, Ke and Ding, Shouhong},
+  journal={arXiv preprint arXiv:2312.08636},
+  year={2023}
+}
+
+```
 
 
