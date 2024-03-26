@@ -5,7 +5,7 @@
  ![GitHub stars](https://img.shields.io/github/stars/synbol/Parameter-Efficient-Transfer-Learning-Benchmark.svg?color=red&style=for-the-badge) 
  ![GitHub forks](https://img.shields.io/github/forks/synbol/Parameter-Efficient-Transfer-Learning-Benchmark.svg?style=for-the-badge) 
  ![GitHub contributors](https://img.shields.io/github/contributors/synbol/Parameter-Efficient-Transfer-Learning-Benchmark.svg?style=for-the-badge) 
- ![GitHub activity](https://img.shields.io/github/last-commit/synbol/Parameter-Efficient-Transfer-Learning-Benchmark?color=yellow&style=for-the-badge) 
+ ![GitHub activity](https://img.shields.io/github/last-commit/synbol/Parameter-Efficient-Transfer-Learning-Benchmark?style=for-the-badge) 
  
  <a href=''><img src='https://img.shields.io/badge/Project-Page-Green'></a>
  <a href=''><img src='https://img.shields.io/badge/UPEB-Arxiv-red'></a> 
