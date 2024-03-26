@@ -12,6 +12,6 @@
 </p>
 
 ## 🔥 <span id="head1"> *News* </span>
-- ✅ [2024/03/01] "**Visual PEFT Library/Benchmark**" repo is created.
+* ✅ [2024/03/01] "**Visual PEFT Library/Benchmark**" repo is created.
 
 
