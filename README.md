@@ -13,6 +13,8 @@
 </div>
 
 ## 🔥 <span id="head1"> *News* </span>
+- [ ] [2024/04/20] "**VMT-Adapter: Parameter-Efficient Transfer Learning for Multi-Task Dense Understanding**" code will be released.
+- [ ] [2024/04/10] "**MmAP: Multi-modal Alignment Prompt for Cross-domain Multi-task Learning**" code will be released.
 * ✅ [2024/03/01] "**Visual PEFT Library/Benchmark**" repo is created.
 
 
@@ -32,7 +34,7 @@ If you find our survey and repository useful for your research, please cite it b
 }
 
 @article{xin2023vmt,
-  title={VMT-Adapter: Parameter-Efficient Transfer Learning for Multi-Task Dense},
+  title={VMT-Adapter: Parameter-Efficient Transfer Learning for Multi-Task Dense Understanding},
   author={Xin, Yi and Du, Junlong and Wang, Qiang and Lin, Zhiwen and Yan, Ke},
   journal={arXiv preprint arXiv:2312.08733},
   year={2023}
