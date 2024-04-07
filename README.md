@@ -33,18 +33,24 @@ If you find our survey and repository useful for your research, please cite it b
   year={2024}
 }
 
-@article{xin2023vmt,
-  title={VMT-Adapter: Parameter-Efficient Transfer Learning for Multi-Task Dense Understanding},
+@inproceedings{xin2024vmt,
+  title={VMT-Adapter: Parameter-Efficient Transfer Learning for Multi-Task Dense Scene Understanding},
   author={Xin, Yi and Du, Junlong and Wang, Qiang and Lin, Zhiwen and Yan, Ke},
-  journal={arXiv preprint arXiv:2312.08733},
-  year={2023}
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={38},
+  number={14},
+  pages={16085--16093},
+  year={2024}
 }
 
-@article{xin2023mmap,
-  title={MmAP: Multi-modal Alignment Prompt for Cross-domain Multi-task Learning},
+@inproceedings{xin2024mmap,
+  title={Mmap: Multi-modal alignment prompt for cross-domain multi-task learning},
   author={Xin, Yi and Du, Junlong and Wang, Qiang and Yan, Ke and Ding, Shouhong},
-  journal={arXiv preprint arXiv:2312.08636},
-  year={2023}
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={38},
+  number={14},
+  pages={16076--16084},
+  year={2024}
 }
 
 ```
