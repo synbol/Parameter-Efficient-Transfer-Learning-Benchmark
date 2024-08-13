@@ -69,6 +69,7 @@ pip install -r requirements.txt
 
 ### Data Preparation
 
+#### Visual Task Adaptation Benchmark (VTAB)
 
 
 ### Quick Start
