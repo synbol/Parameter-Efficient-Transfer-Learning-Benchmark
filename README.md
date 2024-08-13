@@ -17,7 +17,7 @@
 
 <div align="center">
   <p align="center">
-    <a href="[]()">Paper</a>
+    <a href="[111](111)">Paper</a>
     ·
     <a href="https://github.com/synbol/Parameter-Efficient-Transfer-Learning-Benchmark">Benchmark</a>
     ·
@@ -25,9 +25,9 @@
     ·
     <a href="">Document</a>
     ·
-    <a href="[]()">Video</a>
+    <a href="[111](111)">Video</a>
     ·
-    <a href="[]()">Video (Chinese)</a>
+    <a href="[111](111)">Video (Chinese)</a>
   </p>
 </div>
 ## 🔥 <span id="head1"> *News* </span>
