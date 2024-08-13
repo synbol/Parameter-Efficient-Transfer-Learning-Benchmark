@@ -17,17 +17,17 @@
 
 <div align="center">
   <p align="center">
-    <a href="">Paper</a>
+    <a href="[]()">Paper</a>
     ·
-    <a href="[https://github.com/microsoft/Semi-supervised-learning/tree/main/results](https://github.com/synbol/Parameter-Efficient-Transfer-Learning-Benchmark)">Benchmark</a>
+    <a href="https://github.com/synbol/Parameter-Efficient-Transfer-Learning-Benchmark">Benchmark</a>
     ·
-    <a href="[https://colab.research.google.com/drive/1lFygK31jWyTH88ktao6Ow-5nny5-B7v5](https://v-petl-bench.github.io/)">Homepage</a>
+    <a href="https://v-petl-bench.github.io/">Homepage</a>
     ·
     <a href="">Document</a>
     ·
-    <a href="">Video</a>
+    <a href="[]()">Video</a>
     ·
-    <a href="https://www.bilibili.com/video/av474982872/">Video (Chinese)</a>
+    <a href="[]()">Video (Chinese)</a>
   </p>
 </div>
 ## 🔥 <span id="head1"> *News* </span>
