@@ -31,11 +31,14 @@
   </p>
 </div>
 
-## 🔥 <span id="head1"> *News* </span>
+## 🔥 <span id="head1"> *News and Updates* </span>
 * ✅ [2024/06/01] Visual PEFT Library/Benchmark repo is created.
 
 
+## 🔥 <span id="head1"> *Introduction* </span>
 
+## 🔥 <span id="head1"> *Getting Started* </span>
+This is an example of how to set up USB locally. To get a local copy up, running follow these simple example steps.
 
 ## ⭐ <span id="head1"> *Citation* </span>
 
