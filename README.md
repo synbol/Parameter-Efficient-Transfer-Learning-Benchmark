@@ -44,7 +44,9 @@
 
 ## 🔥 <span id="head1"> *Getting Started* </span>
 
-This is an example of how to set up V-PETL Bench locally. To get a local copy up, running follow these simple example steps.
+This is an example of how to set up V-PETL Bench locally. 
+
+To get a local copy up, running follow these simple example steps.
 
 ### Environment Setup
 
