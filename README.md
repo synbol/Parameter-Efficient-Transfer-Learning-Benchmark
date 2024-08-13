@@ -77,7 +77,7 @@ pip install -r requirements.txt
 
 - **Fine-Grained Visual Classification tasks (FGVC)**
 
-    The datasets can be downloaded following the official links. We split the training data if the public validation set is not available. The splitted dataset can be found here: [Download Link](https://huggingface.co/datasets/XiN0919/FGVC/resolve/main/json.zip?download=true).
+    FGVC comprises 5 fine-grained visual classification dataset. The datasets can be downloaded following the official links. We split the training data if the public validation set is not available. The splitted dataset can be found here: [Download Link](https://huggingface.co/datasets/XiN0919/FGVC/resolve/main/json.zip?download=true).
   
      - [CUB200 2011](https://data.caltech.edu/records/65de6-vp158)
    
