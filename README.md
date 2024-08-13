@@ -91,6 +91,11 @@ pip install -r requirements.txt
 
 #### Video Action Recognition Dataset
 
+- **1. Kinetics-400**
+
+- **2. Something-Something V2(SSv2)**
+
+- **3. HMDB51**
 
 #### Dense Prediction Dataset
 
