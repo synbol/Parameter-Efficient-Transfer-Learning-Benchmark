@@ -96,6 +96,12 @@ pip install -r requirements.txt
 
 #### Dense Prediction Dataset
 
+- **1. MS-COCO**
+
+- **2. ADE20K**
+
+- **3. PASCAL VOC**
+
 ### Pre-trained Model Preperation
 
 
