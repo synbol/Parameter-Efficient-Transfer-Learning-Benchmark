@@ -13,9 +13,7 @@
 </div>
 
 ## 🔥 <span id="head1"> *News* </span>
-- [ ] [2024/04/30] "**VMT-Adapter: Parameter-Efficient Transfer Learning for Multi-Task Dense Understanding**" code will be released.
-- [ ] [2024/04/30] "**MmAP: Multi-modal Alignment Prompt for Cross-domain Multi-task Learning**" code will be released.
-* ✅ [2024/03/01] "**Visual PEFT Library/Benchmark**" repo is created.
+* ✅ [2024/06/01] "**Visual PEFT Library/Benchmark**" repo is created.
 
 
 
