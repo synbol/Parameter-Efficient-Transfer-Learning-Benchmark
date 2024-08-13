@@ -49,19 +49,19 @@ To get a local copy up, running follow these simple example steps.
 
 V-PETL Bench is built on pytorch, with torchvision, torchaudio, and timm, etc.
 
-To install the required packages, you can create a conda environment:
+- To install the required packages, you can create a conda environment.
 
 ```sh
 conda create --name v-petl-bench python=3.8
 ```
 
-activate conda environment:
+- Activate conda environment.
 
 ```sh
 conda activate v-petl-bench
 ```
 
-use pip to install required packages:
+- Use pip to install required packages.
 
 ```sh
 pip install -r requirements.txt
