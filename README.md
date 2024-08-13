@@ -89,6 +89,9 @@ pip install -r requirements.txt
    
      - [Stanford Cars](https://ai.stanford.edu/~jkrause/cars/car_dataset.html) 
 
+### Pre-trained Model Preperation
+
+
 ### Quick Start
 
 
