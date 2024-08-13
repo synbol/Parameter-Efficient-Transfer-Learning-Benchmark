@@ -38,7 +38,33 @@
 ## 🔥 <span id="head1"> *Introduction* </span>
 
 ## 🔥 <span id="head1"> *Getting Started* </span>
+
 This is an example of how to set up V-PETL Bench locally. To get a local copy up, running follow these simple example steps.
+
+### Prerequisites
+
+V-PETL Bench is built on pytorch, with torchvision, torchaudio, and transformers.
+
+To install the required packages, you can create a conda environment:
+
+```sh
+conda create --name v-petl-bench python=3.8
+```
+
+then use pip to install required packages:
+
+```sh
+pip install -r requirements.txt
+```
+
+From now on, you can start use V-PETL Bench by typing
+
+```sh
+python train.py --c config/usb_cv/fixmatch/fixmatch_cifar100_200_0.yaml
+```
+
+
+
 
 ## ⭐ <span id="head1"> *Citation* </span>
 
