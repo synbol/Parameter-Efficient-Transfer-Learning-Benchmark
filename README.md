@@ -71,7 +71,13 @@ pip install -r requirements.txt
 
 - Visual Task Adaptation Benchmark (VTAB)
 
-VTAB comprises 19 diverse visual classification datasets. We have processed all the dataset and the data can be downloaded here: [Download Link]()
+VTAB comprises 19 diverse visual classification datasets. 
+
+We have processed all the dataset and the data can be downloaded here: [Download Link]()
+
+For specific processing procedures and tips, please see [VTAB_SETUP]().
+
+
 
 ### Quick Start
 
