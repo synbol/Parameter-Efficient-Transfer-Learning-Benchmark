@@ -69,7 +69,7 @@ pip install -r requirements.txt
 
 ### Data Preparation
 
-- Visual Task Adaptation Benchmark (VTAB)
+- **Visual Task Adaptation Benchmark (VTAB)**
 
     VTAB comprises 19 diverse visual classification datasets. 
 
