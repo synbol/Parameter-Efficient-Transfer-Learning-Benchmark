@@ -73,11 +73,25 @@ pip install -r requirements.txt
 
     VTAB comprises 19 diverse visual classification datasets. 
 
-    We have processed all the dataset and the data can be downloaded here: [Download Link]()
+    We have processed all the dataset and the data can be downloaded here: [Download Link]().
 
     For specific processing procedures and tips, please see [VTAB_SETUP]().
 
+- **Fine-Grained Visual Classification tasks (FGVC)**
 
+    The datasets can be downloaded following the official links. We split the training data if the public validation set is not available.
+
+    The splitted dataset can be found here: [Download Link]().
+  
+     - [CUB200 2011](https://data.caltech.edu/records/65de6-vp158)
+   
+     - [NABirds](http://info.allaboutbirds.org/nabirds/)
+   
+     - [Oxford Flowers](https://www.robots.ox.ac.uk/~vgg/data/flowers/)
+   
+     - [Stanford Dogs](http://vision.stanford.edu/aditya86/ImageNetDogs/main.html)
+   
+     - [Stanford Cars](https://ai.stanford.edu/~jkrause/cars/car_dataset.html) 
 
 ### Quick Start
 
