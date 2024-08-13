@@ -11,7 +11,6 @@
 
 ## <p style="font-size: 20px;" align=center>𝓥𝓲𝓼𝓾𝓪𝓵 𝓟𝓪𝓻𝓪𝓶𝓮𝓽𝓮𝓻-𝓔𝓯𝓯𝓲𝓬𝓲𝓮𝓷𝓽 𝓣𝓻𝓪𝓷𝓼𝓯𝓮𝓻 𝓛𝓮𝓪𝓻𝓷𝓲𝓷𝓰 𝓑𝓮𝓷𝓬𝓱𝓶𝓪𝓻𝓴</p>
 <div align="center">
- <p style="font-size:125;" align=center><strong>𝓥𝓲𝓼𝓾𝓪𝓵 𝓟𝓪𝓻𝓪𝓶𝓮𝓽𝓮𝓻-𝓔𝓯𝓯𝓲𝓬𝓲𝓮𝓷𝓽 𝓣𝓻𝓪𝓷𝓼𝓯𝓮𝓻 𝓛𝓮𝓪𝓻𝓷𝓲𝓷𝓰 𝓑𝓮𝓷𝓬𝓱𝓶𝓪𝓻𝓴</strong></p>
   <p align="center">
     <a href="[111](111)">Paper</a>
     ·
