@@ -38,7 +38,7 @@
 ## 🔥 <span id="head1"> *Introduction* </span>
 
 ## 🔥 <span id="head1"> *Getting Started* </span>
-This is an example of how to set up USB locally. To get a local copy up, running follow these simple example steps.
+This is an example of how to set up V-PETL Bench locally. To get a local copy up, running follow these simple example steps.
 
 ## ⭐ <span id="head1"> *Citation* </span>
 
