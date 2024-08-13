@@ -23,6 +23,11 @@
 If you find our survey and repository useful for your research, please cite it below:
 
 ```bibtex
+@article{xin2024bench,
+  title={V-PETL Bench: A Unified Visual Parameter-Efficient Transfer Learning Benchmark},
+  author={Xin, Yi and Luo, Siqi and Liu, Xuyang and Zhou, Haodi and Cheng, Xinyu, etc},
+  year={2024}
+}
 
 @article{xin2024parameter,
   title={Parameter-Efficient Fine-Tuning for Pre-Trained Vision Models: A Survey},
