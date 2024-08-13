@@ -51,17 +51,18 @@ To install the required packages, you can create a conda environment:
 conda create --name v-petl-bench python=3.8
 ```
 
-then use pip to install required packages:
+activate conda environment:
+
+```sh
+conda activate v-petl-bench
+```
+
+use pip to install required packages:
 
 ```sh
 pip install -r requirements.txt
 ```
 
-From now on, you can start use V-PETL Bench by typing
-
-```sh
-python train.py --c config/usb_cv/fixmatch/fixmatch_cifar100_200_0.yaml
-```
 
 
 
