@@ -32,7 +32,7 @@
 </div>
 
 ## 🔥 <span id="head1"> *News* </span>
-* ✅ [2024/06/01] "**Visual PEFT Library/Benchmark**" repo is created.
+* ✅ [2024/06/01] Visual PEFT Library/Benchmark repo is created.
 
 
 
