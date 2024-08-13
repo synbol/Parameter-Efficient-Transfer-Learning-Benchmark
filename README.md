@@ -71,13 +71,13 @@ pip install -r requirements.txt
 
 - **Visual Task Adaptation Benchmark (VTAB)**
 
-    VTAB comprises 19 diverse visual classification datasets. We have processed all the dataset and the data can be downloaded here: [Download Link]().
+    VTAB comprises 19 diverse visual classification datasets. We have processed all the dataset and the data can be downloaded here: [Download Link](https://huggingface.co/datasets/XiN0919/VTAB-1k/tree/main).
 
     For specific processing procedures and tips, please see [VTAB_SETUP]().
 
 - **Fine-Grained Visual Classification tasks (FGVC)**
 
-    The datasets can be downloaded following the official links. We split the training data if the public validation set is not available. The splitted dataset can be found here: [Download Link]().
+    The datasets can be downloaded following the official links. We split the training data if the public validation set is not available. The splitted dataset can be found here: [Download Link](https://drive.google.com/drive/folders/1mnvxTkYxmOr2W9QjcgS64UBpoJ4UmKaM?usp=sharing).
   
      - [CUB200 2011](https://data.caltech.edu/records/65de6-vp158)
    
