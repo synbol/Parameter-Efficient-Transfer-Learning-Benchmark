@@ -11,7 +11,7 @@
 
 <div align="center">
   <p align="center">
-    <a href="[111](111)">Paper</a>
+<!--     <a href="[111](111)">Paper</a> -->
     ·
     <a href="https://github.com/synbol/Parameter-Efficient-Transfer-Learning-Benchmark">Benchmark</a>
     ·
@@ -19,15 +19,14 @@
     ·
     <a href="">Document</a>
     ·
-    <a href="[111](111)">Video</a>
-    ·
-    <a href="[111](111)">Video (Chinese)</a>
+<!--     <a href="[111](111)">Video</a> -->
+<!--     <a href="[111](111)">Video (Chinese)</a> -->
   </p>
 </div>
 
 ## 🔥 <span id="head1"> *News and Updates* </span>
 
-* ✅ [2024/08/01] Visual PEFT Benchmark starts releasing code, document, etc.
+* ✅ [2024/07/01] Visual PEFT Benchmark starts releasing code, document, etc.
 
 * ✅ [2024/06/20] Visual PEFT Benchmark homepage is created.
 
@@ -35,6 +34,9 @@
 
 
 ## 🔥 <span id="head1"> *Introduction* </span>
+
+Parameter-efficient transfer learning (PETL) methods show promise in adapting a pre-trained model to various downstream tasks while training only a few parameters. In the computer vision (CV) domain, numerous PETL algorithms have been proposed, but their direct employment or comparison remains inconvenient. To address this challenge, we construct a Unified Visual PETL Benchmark (V-PETL Bench) for the CV domain by selecting 30 diverse, challenging, and comprehensive datasets from image recognition, video action recognition, and dense prediction tasks. On these datasets, we systematically evaluate 25 dominant PETL algorithms and open-source a modular and extensible codebase for a fair evaluation of these algorithms. V-PETL Bench runs on NVIDIA A800 GPUs and requires approximately 310 GPU days. We release all the checkpoints and training logs, making them more efficient and friendly to researchers. Additionally, V-PETL Bench
+13 will be continuously updated for new PETL algorithms and CV tasks.
 
 ## 🔥 <span id="head1"> *Getting Started* </span>
 
@@ -117,15 +119,7 @@ If you find our survey and repository useful for your research, please cite it b
 ```bibtex
 @article{xin2024bench,
   title={V-PETL Bench: A Unified Visual Parameter-Efficient Transfer Learning Benchmark},
-  author={Xin, Yi and Luo, Siqi and Liu, Xuyang and Zhou, Haodi and Cheng, Xinyu, etc},
-  journal={arXiv preprint arXiv:2408},
-  year={2024}
-}
-
-@article{xin2024parameter,
-  title={Parameter-Efficient Fine-Tuning for Pre-Trained Vision Models: A Survey},
-  author={Xin, Yi and Luo, Siqi and Zhou, Haodi and Du, Junlong and Liu, Xiaohong and Fan, Yue and Li, Qing and Du, Yuntao},
-  journal={arXiv preprint arXiv:2402.02242},
+  author={Yi Xin, Siqi Luo, Xuyang Liu, Haodi Zhou, Xinyu Cheng, Christina Luoluo Lee, Junlong Du, Yuntao Du., Haozhe Wang, MingCai Chen, Ting Liu, Guimin Hu, Zhongwei Wan, Rongchao Zhang, Aoxue Li, Mingyang Yi, Xiaohong Liu},
   year={2024}
 }
 
