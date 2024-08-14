@@ -1,5 +1,12 @@
-## <p style="font-size: 20px;" align=center>𝓥𝓲𝓼𝓾𝓪𝓵 𝓟𝓪𝓻𝓪𝓶𝓮𝓽𝓮𝓻-𝓔𝓯𝓯𝓲𝓬𝓲𝓮𝓷𝓽 𝓣𝓻𝓪𝓷𝓼𝓯𝓮𝓻 𝓛𝓮𝓪𝓻𝓷𝓲𝓷𝓰 𝓑𝓮𝓷𝓬𝓱𝓶𝓪𝓻𝓴</p>
+<div align="center">
+  <a href="https://github.com/synbol/Parameter-Efficient-Transfer-Learning-Benchmark">
+    <img src="assets/v-petl.png" alt="Logo" width="400">
+  </a>
+</div>
+
+<!-- 𝓥𝓲𝓼𝓾𝓪𝓵 𝓟𝓪𝓻𝓪𝓶𝓮𝓽𝓮𝓻-𝓔𝓯𝓯𝓲𝓬𝓲𝓮𝓷𝓽 𝓣𝓻𝓪𝓷𝓼𝓯𝓮𝓻 𝓛𝓮𝓪𝓻𝓷𝓲𝓷𝓰 𝓑𝓮𝓷𝓬𝓱𝓶𝓪𝓻𝓴 -->
 <div align=center>
+<h2 style="font-size: 50pt;" align=center><strong>A Unified Visual Parameter-Efficient Transfer Learning Benchmark</strong></h2>
 <p>
  
  ![GitHub stars](https://img.shields.io/github/stars/synbol/Parameter-Efficient-Transfer-Learning-Benchmark.svg?color=red&style=for-the-badge) 
@@ -11,7 +18,8 @@
 
 <div align="center">
   <p align="center">
-<!--     <a href="[111](111)">Paper</a> -->
+    ·
+    <a href="[111](111)">Paper</a>
     ·
     <a href="https://github.com/synbol/Parameter-Efficient-Transfer-Learning-Benchmark">Benchmark</a>
     ·
@@ -26,7 +34,7 @@
 
 ## 🔥 <span id="head1"> *News and Updates* </span>
 
-* ✅ [2024/07/01] Visual PEFT Benchmark starts releasing code, etc.
+* ✅ [2024/07/25] Visual PEFT Benchmark starts releasing dataset, code, etc.
 
 * ✅ [2024/06/20] Visual PEFT Benchmark homepage is created.
 
@@ -35,8 +43,10 @@
 
 ## 🔥 <span id="head1"> *Introduction* </span>
 
-Parameter-efficient transfer learning (PETL) methods show promise in adapting a pre-trained model to various downstream tasks while training only a few parameters. In the computer vision (CV) domain, numerous PETL algorithms have been proposed, but their direct employment or comparison remains inconvenient. To address this challenge, we construct a Unified Visual PETL Benchmark (V-PETL Bench) for the CV domain by selecting 30 diverse, challenging, and comprehensive datasets from image recognition, video action recognition, and dense prediction tasks. On these datasets, we systematically evaluate 25 dominant PETL algorithms and open-source a modular and extensible codebase for a fair evaluation of these algorithms. V-PETL Bench runs on NVIDIA A800 GPUs and requires approximately 310 GPU days. We release all the checkpoints and training logs, making them more efficient and friendly to researchers. Additionally, V-PETL Bench
-13 will be continuously updated for new PETL algorithms and CV tasks.
+Parameter-efficient transfer learning (PETL) methods show promise in adapting a pre-trained model to various downstream tasks while training only a few parameters. In the computer vision (CV) domain, numerous PETL algorithms have been proposed, but their direct employment or comparison remains inconvenient. To address this challenge, we construct a Unified Visual PETL Benchmark (V-PETL Bench) for the CV domain by selecting 30 diverse, challenging, and comprehensive datasets from image recognition, video action recognition, and dense prediction tasks. On these datasets, we systematically evaluate 25 dominant PETL algorithms and open-source a modular and extensible codebase for a fair evaluation of these algorithms. 
+
+<!--V-PETL Bench runs on NVIDIA A800 GPUs and requires approximately 310 GPU days. We release all the checkpoints and training logs, making them more efficient and friendly to researchers. Additionally, V-PETL Bench
+13 will be continuously updated for new PETL algorithms and CV tasks. -->
 
 ## 🔥 <span id="head1"> *Getting Started* </span>
 
@@ -92,23 +102,126 @@ pip install -r requirements.txt
 
 - **1. Kinetics-400**
 
-- **2. Something-Something V2(SSv2)**
+  1. Download the dataset from [Download Link](https://deepmind.com/research/open-source/kinetics) or [Download Link](https://opendatalab.com/OpenMMLab/Kinetics-400).
 
-- **3. HMDB51**
+  2. Preprocess the dataset by resizing the short edge of video to **320px**. You can refer to [MMAction2 Data Benchmark](https://github.com/open-mmlab/mmaction2).
+
+  3. Generate annotations needed for dataloader ("<video_id> <video_class>" in annotations). The annotation usually includes `train.csv`, `val.csv` and `test.csv`. The format of `*.csv` file is like:
+
+     ```
+     video_1.mp4  label_1
+     video_2.mp4  label_2
+     video_3.mp4  label_3
+     ...
+     video_N.mp4  label_N
+     ```
+     <br>
+    
+
+- **2. Something-Something V2 (SSv2)**
+
+  1. Download the dataset from [Download Link](https://developer.qualcomm.com/software/ai-datasets/something-something).
+
+  2. Preprocess the dataset by changing the video extension from `webm` to `.mp4` with the **original** height of **240px**. You can refer to [MMAction2 Data Benchmark](https://github.com/open-mmlab/mmaction2).
+
+  3. Generate annotations needed for dataloader ("<video_id> <video_class>" in annotations). The annotation usually includes `train.csv`, `val.csv` and `test.csv`. The format of `*.csv` file is like:
+
+     ```
+     video_1.mp4  label_1
+     video_2.mp4  label_2
+     video_3.mp4  label_3
+     ...
+     video_N.mp4  label_N
+     ```
 
 #### Dense Prediction Dataset
 
 - **1. MS-COCO**
 
+    MS-COCO are available from this [Download Link](https://cocodataset.org/#download).
+
 - **2. ADE20K**
+
+    The training and validation set of ADE20K could be download from this [Download Link](http://data.csail.mit.edu/places/ADEchallenge/ADEChallengeData2016.zip).
+We may also download test set from [Download Link](http://data.csail.mit.edu/places/ADEchallenge/release_test.zip).
 
 - **3. PASCAL VOC**
 
+    Pascal VOC 2012 could be downloaded from [Download Link](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar).
+Beside, most recent works on Pascal VOC dataset usually exploit extra augmentation data, which could be found [Download Link](http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/semantic_contours/benchmark.tgz).
+
 ### Pre-trained Model Preperation
 
+- Download and place the pre-trained Vision Transformer backbones to `/path/to/pretrained_models`. Note that you also need to rename the downloaded Swin-B ckpt from `swin_base_patch4_window7_224_22k.pth` to `Swin-B_16.pth`.
+
+```sh
+mkdir pretrained_models
+
+wget https://storage.googleapis.com/vit_models/imagenet21k/ViT-B_16.npz
+```
+or 
+
+```sh
+mkdir pretrained_models
+
+wget https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_base_patch4_window7_224_22k.pth
+
+mv swin_base_patch4_window7_224_22k.pth Swin_B_16.pth
+```
+
+<table><tbody>
+<!-- START TABLE -->
+<!-- TABLE HEADER -->
+<th valign="bottom">Pre-trained Backbone</th>
+<th valign="bottom">Pre-trained Objective</th>
+ <th valign="bottom">Pre-trained Dataset</th>
+<th valign="bottom">Checkpoint</th>
+ 
+<!-- TABLE BODY -->
+<tr><td align="center">ViT-B/16</td>
+<td align="center">Supervised</td>
+<td align="center">ImageNet-21K</td>
+<td align="center"><a href="https://storage.googleapis.com/vit_models/imagenet21k/ViT-B_16.npz">Download Link</a></td>
+</tr>
+
+<tr><td align="center">ViT-L/16</td>
+<td align="center">Supervised</td>
+ <td align="center">ImageNet-21K</td>
+<td align="center"><a href="https://storage.googleapis.com/vit_models/imagenet21k/ViT-L_16.npz">Download Link</a></td>
+</tr>
+
+<tr><td align="center">ViT-H/16</td>
+<td align="center">Supervised</td>
+<td align="center">ImageNet-21K</td>
+<td align="center"><a href="https://storage.googleapis.com/vit_models/imagenet21k/ViT-H_14.npz">Download Link</a></td>
+</tr>
+ 
+<tr><td align="center">Swin-B</td>
+<td align="center">Supervised</td>
+<td align="center">ImageNet-22K</td>
+<td align="center"><a href="https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_base_patch4_window7_224_22k.pth">Download Link</a></td>
+</tr>
+
+<tr><td align="center">Swin-L</td>
+<td align="center">Supervised</td>
+ <td align="center">ImageNet-22K</td>
+<td align="center"><a href="https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_large_patch4_window7_224_22k.pth">Download Link</a></td>
+</tr>
+
+<tr><td align="center">ViT-B(VideoMAE)</td>
+<td align="center">Self-Supervised</td>
+ <td align="center">Kinetics-400</td>
+<td align="center"><a href="https://drive.google.com/file/d/1tEhLyskjb755TJ65ptsrafUG2llSwQE1">Download Link</a></td>
+</tr>
+
+<tr><td align="center">Video Swin-B</td>
+<td align="center">Supervised</td>
+ <td align="center">Kinetics-400</td>
+<td align="center"><a href="https://github.com/SwinTransformer/storage/releases/download/v1.0.4/swin_base_patch244_window877_kinetics400_22k.pth">Download Link</a></td>
+</tr>
+</tbody></table>
 
 ## Quick Start
-
 
 ## Results
 ### Benchmark results of image classification on VTAB
@@ -116,10 +229,10 @@ We evaluate 13 PETL algorithms on five datasets with ViTB/16 models pre-trained 
 
 | **Method**  | CUB-200-2011 | NABirds | Oxford Flowers | Stanford Dogs | Stanford Cars | Mean | #Params. (M) | PPT |
 |-----------------------|--------------|---------|----------------|---------------|---------------|------|---------------|-----|
-|||||  <strong>Traditional Finetuning</strong>  ||||
+||||  <td colspan="1" align="center"><strong>Traditional Finetuning</strong></td>  ||||||
 | Full fine-tuning       | 87.3         | 82.7    | 98.8           | 89.4          | 84.5          | 88.54| 85.8M         | -   |
 | Linear probing         | 85.3         | 75.9    | 97.9           | 86.2          | 51.3          | 79.32| **0 M**       | 0.79|
-||||| <strong>PETL Algorithms</strong> ||||
+|||| <td colspan="1" align="center"><strong>PETL Algorithms</strong></td>  ||||||
 | Adapter           | 87.1         | 84.3    | 98.5           | 89.8          | 68.6          | 85.66| 0.41M         | 0.84|
 | AdaptFormer        | 88.4         | 84.7    | 99.2           | 88.2          | 81.9          | 88.48| 0.46M         | 0.87|
 | Prefix Tuning     | 87.5         | 82.0    | 98.0           | 74.2          | 90.2          | 86.38| 0.36M         | 0.85|
@@ -141,10 +254,10 @@ Benchmark results on VTAB. We evaluate 18 PETL algorithms on 19 datasets with Vi
 models pre-trained on ImageNet-21K. We highlight the best and the second results.
 | Method | CIFAR-100 | Caltech101 | DTD | Flowers102 | Pets | SVHN | Sun397 | Patch Camelyon | EuroSAT | Resisc45 | Retinopathy | Clevr/count | Clevr/distance | DMLab | KITTI/distance | dSprites/loc | dSprites/ori | SmallNORB/azi | SmallNORB/ele | Mean | # Params. (M) | PPT |
 | --- |  --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|||||||| <strong>Traditional Finetuning</strong> ||||||
+|||||||| <td colspan="1" align="center"><strong>Traditional Finetuning</strong></td> ||||||
 | Full fine-tuning | 68.9 | 87.7 | 64.3 | 97.2 | 86.9 | 87.4 | 38.8 | 79.7 | 95.7 | 84.2 | 73.9 | 56.3 | 58.6 | 41.7 | 65.5 | 57.5 | 46.7 | 25.7 | 29.1 | 65.57 | 85.8M | - |
 | Linear probing | 63.4 | 85.0 | 63.2 | 97.0 | 86.3 | 36.6 | 51.0 | 78.5 | 87.5 | 68.6 | 74.0 | 34.3 | 30.6 | 33.2 | 55.4 | 12.5 | 20.0 | 9.6 | 19.2 | 52.94 | 0M | 0.53 |
-|||||||| <strong>PETL Algorithms</strong>  |||||||
+|||||||| <td colspan="1" align="center"><strong>PETL Algorithms</strong></td>  |||||||
 | Adapter | 69.2 | 90.1 | 68.0 | 98.8 | 89.9 | 82.8 | 54.3 | 84.0 | 94.9 | 81.9 | 75.5 | 80.9 | 65.3 | 48.6 | 78.3 | 74.8 | 48.5 | 29.9 | 41.6 | 71.44 | 0.16M | 0.71 |
 | VPT-Shallow | 77.7 | 86.9 | 62.6 | 97.5 | 87.3 | 74.5 | 51.2 | 78.2 | 92.0 | 75.6 | 72.9 | 50.5 | 58.6 | 40.5 | 67.1 | 68.7 | 36.1 | 20.2 | 34.1 | 64.85 | 0.08M | 0.65 |
 | VPT-Deep | 78.8 | 90.8 | 65.8 | 98.0 | 88.3 | 78.1 | 49.6 | 81.8 | 96.1 | 83.4 | 68.4 | 68.5 | 60.0 | 46.5 | 72.8 | 73.6 | 47.9 | 32.9 | 37.8 | 69.43 | 0.56M | 0.68 |
@@ -165,18 +278,19 @@ models pre-trained on ImageNet-21K. We highlight the best and the second results
 | SNF | 84.0 | 94.0 | 72.7 | 99.3 | 91.3 | 90.3 | 54.9 | 87.2 | 97.3 | 85.5 | 74.5 | 82.3 | 63.8 | 49.8 | 82.5 | 75.8 | 49.2 | 31.4 | 42.1 | 74.10 | 0.25M | 0.73 |
 
 
+
 ### Benchmark results of video action recognition  on SSv2 and HMDB51.
 Benchmark results on SSv2 and HMDB51. We evaluate 5 PETL algorithms with ViT-B from VideoMAE and Video Swin Transformer. The results are Top-1 accuracy.
 
 | Method                     | Model         | Pre-training  | \# Params. | SSv2  |  | HMDB51  |  |
 |----------------------------|---------------|---------------|------------|-----------|----------|-------------|------------|
 | |   |  || Top1 |  PPT | Top1 | PPT |
-|||| <strong>Vision Transformer (from VideoMAE)</strong> |||||                                                             
+|||| <td colspan="1" align="center"><strong>Vision Transformer (from VideoMAE)</strong></td>  |||||                                                             
 | Full fine-tuning            | ViT-B         | Kinetics 400  | 85.97 M    | 53.97%    | -        | 46.41%      | -          |
 | Frozen                      | ViT-B         | Kinetics 400  | **0 M**    | 29.23%    | 0.29     | 49.84%      | _0.50_     |
 | AdaptFormer            | ViT-B         | Kinetics 400  | _1.19 M_   | **59.02%**| **0.56** | _55.69%_    | **0.53**   |
 | BAPAT                   | ViT-B         | Kinetics 400  | 2.06 M     | _57.78%_  | _0.53_   | **57.18%**  | **0.53**   |
-| |||  <strong>Video Swin Transformer</strong> |||||                                
+| |||  <td colspan="1" align="center"><strong>Video Swin Transformer</strong><td>  |||||                                
 | Full fine-tuning            | Video Swin-B  | Kinetics 400  | 87.64 M    | _50.99%_  | -        | 68.07%      | -          |
 | Frozen                      | Video Swin-B  | Kinetics 400  | **0 M**    | 24.13%    | 0.24     | _71.28%_    | **0.71**   |
 | LoRA                 | Video Swin-B  | Kinetics 400  | _0.75 M_   | 38.34%    | 0.37     | 62.12%      | 0.60       |
@@ -191,10 +305,10 @@ Benchmark results on COCO. We evaluate 9 PETL algorithms with Swin-B models pre-
 | **Swin-B**             | **\# Params.** | **Memory** | **COCO (Cascade Mask R-CNN)** |  | **COCO (Cascade Mask R-CNN)** | |
 |----------------|----------------|------------|-------------------|--------|-------------|--------|
 |  |  |  | **$\mathrm{AP_{Box}}$** | **PPT** | **$\mathrm{AP_{Mask}}$** | **PPT** |
-| |||<strong>Traditional Finetuning</strong> |||||
+| ||<td colspan="1" align="center"><strong>Traditional Finetuning</strong></td> |||||
 | Full fine-tuning       | 86.75 M        | 17061 MB   | _51.9%_                           | -      | _45.0%_                            | -      |
 | Frozen                 | **0.00 M**     | **7137 MB**| 43.5%                             | 0.44   | 38.6%                              | 0.39   |
-|||| <strong>PETL Algorithms</strong> |||||
+||| <td colspan="1" align="center"><strong>PETL Algorithms</strong></td>  |||||
 | Bitfit             | 0.20 M         | 13657 MB   | 47.9%                             | 0.47   | 41.9%                              | **0.42**|
 | LN TUNE            | _0.06 M_       | 12831 MB   | 48.0%                             | _0.48_ | 41.4%                              | _0.41_ |
 | Partial-1          | 12.60 M        | _7301 MB_  | 49.2%                             | 0.35   | 42.8%                              | 0.30   |
@@ -213,10 +327,10 @@ Benchmark results on PASCAL VOC and ADE20K. We evaluate 9 PETL algorithms with S
 | **Swin-L**             | **\# Params.** | **Memory (VOC)** | **Pascal VOC (RetinaNet)** || **ADE20K (UPerNet)** |  |
 |------------------------|----------------|-------------|---------------------------|--------|--------------------------------------|--------|
 | || | **$\mathrm{AP_{Box}}$** | **PPT** | **$\mathrm{mIoU}$** | **PPT** |
-|||| <strong>Traditional Finetuning</strong> | |||         
+||| <td colspan="1" align="center"><strong>Traditional Finetuning</strong></td>  | ||| |        
 | Full fine-tuning       | 198.58 M       | 15679 MB         | 83.5%                                        | -      | **52.10%**                          | -      |
 | Frozen                 | **0.00 M**     | _3967 MB_        | 83.6%                                        | 0.84   | 46.84%                              | _0.47_ |
-|||| <strong>PETL Algorithms</strong> ||||
+||| <td colspan="1" align="center"><strong>PETL Algorithms</strong></td>  |||||
 | Bitfit          | 0.30 M         | 10861 MB         | 85.7%                                        | _0.85_ | 48.37%                              | **0.48**|
 | LN TUNE           | _0.09 M_       | 10123 MB         | 85.8%                                        | **0.86**| 47.98%                              | **0.48**|
 | Partial-1         | 28.34 M        | **3943 MB**      | 85.4%                                        | 0.48   | 47.44%                              | 0.27   |
