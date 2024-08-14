@@ -26,7 +26,7 @@
 
 ## 🔥 <span id="head1"> *News and Updates* </span>
 
-* ✅ [2024/07/01] Visual PEFT Benchmark starts releasing code, document, etc.
+* ✅ [2024/07/01] Visual PEFT Benchmark starts releasing code, etc.
 
 * ✅ [2024/06/20] Visual PEFT Benchmark homepage is created.
 
@@ -108,6 +108,8 @@ pip install -r requirements.txt
 
 
 ### Quick Start
+
+### Results
 
 
 
