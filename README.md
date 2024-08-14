@@ -99,9 +99,9 @@ pip install -r requirements.txt
 
 ### 👉 Data Preparation
 
-#### Image Classification Dataset
+#### 1. Image Classification Dataset
 
-- **1. Fine-Grained Visual Classification tasks (FGVC)**
+- **Fine-Grained Visual Classification tasks (FGVC)**
 
     FGVC comprises 5 fine-grained visual classification dataset. The datasets can be downloaded following the official links. We split the training data if the public validation set is not available. The splitted dataset can be found here: [Download Link](https://huggingface.co/datasets/XiN0919/FGVC/resolve/main/json.zip?download=true).
   
@@ -115,13 +115,13 @@ pip install -r requirements.txt
    
      - [Stanford Cars](https://ai.stanford.edu/~jkrause/cars/car_dataset.html)
 
-- **2. Visual Task Adaptation Benchmark (VTAB)**
+- **Visual Task Adaptation Benchmark (VTAB)**
 
     VTAB comprises 19 diverse visual classification datasets. We have processed all the dataset and the data can be downloaded here: [Download Link](https://huggingface.co/datasets/XiN0919/VTAB-1k/tree/main). For specific processing procedures and tips, please see [VTAB_SETUP]().
 
-#### Video Action Recognition Dataset
+#### 2. Video Action Recognition Dataset
 
-- **1. Kinetics-400**
+- **Kinetics-400**
 
   1. Download the dataset from [Download Link](https://deepmind.com/research/open-source/kinetics) or [Download Link](https://opendatalab.com/OpenMMLab/Kinetics-400).
 
@@ -139,7 +139,7 @@ pip install -r requirements.txt
      <br>
     
 
-- **2. Something-Something V2 (SSv2)**
+- **Something-Something V2 (SSv2)**
 
   1. Download the dataset from [Download Link](https://developer.qualcomm.com/software/ai-datasets/something-something).
 
@@ -155,18 +155,18 @@ pip install -r requirements.txt
      video_N.mp4  label_N
      ```
 
-#### Dense Prediction Dataset
+#### 3. Dense Prediction Dataset
 
-- **1. MS-COCO**
+- **MS-COCO**
 
     MS-COCO are available from this [Download Link](https://cocodataset.org/#download).
 
-- **2. ADE20K**
+- **ADE20K**
 
     The training and validation set of ADE20K could be download from this [Download Link](http://data.csail.mit.edu/places/ADEchallenge/ADEChallengeData2016.zip).
 We may also download test set from [Download Link](http://data.csail.mit.edu/places/ADEchallenge/release_test.zip).
 
-- **3. PASCAL VOC**
+- **PASCAL VOC**
 
     Pascal VOC 2012 could be downloaded from [Download Link](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar).
 Beside, most recent works on Pascal VOC dataset usually exploit extra augmentation data, which could be found [Download Link](http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/semantic_contours/benchmark.tgz).
