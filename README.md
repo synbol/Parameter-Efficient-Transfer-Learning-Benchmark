@@ -164,18 +164,19 @@ models pre-trained on ImageNet-21K. We highlight the best and the second results
 | SNF | 84.0 | 94.0 | 72.7 | 99.3 | 91.3 | 90.3 | 54.9 | 87.2 | 97.3 | 85.5 | 74.5 | 82.3 | 63.8 | 49.8 | 82.5 | 75.8 | 49.2 | 31.4 | 42.1 | 74.10 | 0.25M | 0.73 |
 
 
+
 ### Benchmark results of video action recognition  on SSv2 and HMDB51.
 Benchmark results on SSv2 and HMDB51. We evaluate 5 PETL algorithms with ViT-B from VideoMAE and Video Swin Transformer. The results are Top-1 accuracy.
 
 | Method                     | Model         | Pre-training  | \# Params. | SSv2  |  | HMDB51  |  |
 |----------------------------|---------------|---------------|------------|-----------|----------|-------------|------------|
 | |   |  || Top1 |  PPT | Top1 | PPT |
-| <td colspan="8" align="center"><strong>Vision Transformer (from VideoMAE)</strong></td>  |                                                             
+|||| <td colspan="1" align="center"><strong>Vision Transformer (from VideoMAE)</strong></td>  |||||                                                             
 | Full fine-tuning            | ViT-B         | Kinetics 400  | 85.97 M    | 53.97%    | -        | 46.41%      | -          |
 | Frozen                      | ViT-B         | Kinetics 400  | **0 M**    | 29.23%    | 0.29     | 49.84%      | _0.50_     |
 | AdaptFormer            | ViT-B         | Kinetics 400  | _1.19 M_   | **59.02%**| **0.56** | _55.69%_    | **0.53**   |
 | BAPAT                   | ViT-B         | Kinetics 400  | 2.06 M     | _57.78%_  | _0.53_   | **57.18%**  | **0.53**   |
-|   <td colspan="8" align="center"><strong>Video Swin Transformer</strong></td>  |                                
+| |||  <td colspan="1" align="center"><strong>Video Swin Transformer</strong><td>  |||||                                
 | Full fine-tuning            | Video Swin-B  | Kinetics 400  | 87.64 M    | _50.99%_  | -        | 68.07%      | -          |
 | Frozen                      | Video Swin-B  | Kinetics 400  | **0 M**    | 24.13%    | 0.24     | _71.28%_    | **0.71**   |
 | LoRA                 | Video Swin-B  | Kinetics 400  | _0.75 M_   | 38.34%    | 0.37     | 62.12%      | 0.60       |
