@@ -308,22 +308,19 @@ mv swin_base_patch4_window7_224_22k.pth Swin_B_16.pth
 
 - To obtain the checkpoint, please download it at [Download Link]().
 
-| Method                     | Model         | Pre-training  | \# Params. | SSv2  |  | HMDB51  |  |
-|----------------------------|---------------|---------------|------------|-----------|----------|-------------|------------|
-| |   |  || Top1 |  PPT | Top1 | PPT |
-|||| <strong>Vision Transformer (from VideoMAE)</strong> |||||                                                             
-| Full fine-tuning            | ViT-B         | Kinetics 400  | 85.97 M    | 53.97%    | -        | 46.41%      | -          |
-| Frozen                      | ViT-B         | Kinetics 400  | **0 M**    | 29.23%    | 0.29     | 49.84%      | _0.50_     |
-| AdaptFormer            | ViT-B         | Kinetics 400  | _1.19 M_   | **59.02%**| **0.56** | _55.69%_    | **0.53**   |
-| BAPAT                   | ViT-B         | Kinetics 400  | 2.06 M     | _57.78%_  | _0.53_   | **57.18%**  | **0.53**   |
-| |||  <strong>Video Swin Transformer</strong> |||||                                
-| Full fine-tuning            | Video Swin-B  | Kinetics 400  | 87.64 M    | _50.99%_  | -        | 68.07%      | -          |
-| Frozen                      | Video Swin-B  | Kinetics 400  | **0 M**    | 24.13%    | 0.24     | _71.28%_    | **0.71**   |
-| LoRA                 | Video Swin-B  | Kinetics 400  | _0.75 M_   | 38.34%    | 0.37     | 62.12%      | 0.60       |
-| BitFit                | Video Swin-B  | Kinetics 400  | 1.09 M     | 45.94%    | **0.44** | 68.26%      | _0.65_     |
-| AdaptFormer            | Video Swin-B  | Kinetics 400  | 1.56 M     | 40.80%    | 0.38     | 68.66%      | 0.64       |
-| Prefix-tuning           | Video Swin-B  | Kinetics 400  | 6.37 M     | 39.46%    | 0.32     | 56.13%      | 0.45       |
-| BAPAT                  | Video Swin-B  | Kinetics 400  | 6.18 M     | **53.36%**| _0.43_   | **71.93%**  | 0.58       |
+| Method                     | Model         | Pre-training  | Params. | SSv2 (Top1)  | SSv2 (PPT)| HMDB51 (Top1) | HMDB51 (PPT) |
+|----------------------------|---------------|---------------|------------|-----------|----------|-------------|------------|                      
+| Full fine-tuning           | ViT-B         | Kinetics 400  | 85.97 M    | 53.97%    | -        | 46.41%      | -          |
+| Frozen                     | ViT-B         | Kinetics 400  | 0 M        | 29.23%    | 0.29     | 49.84%      | 0.50       |
+| AdaptFormer                | ViT-B         | Kinetics 400  | 1.19 M     | 59.02%    | 0.56     | 55.69%      | 0.53       |
+| BAPAT                      | ViT-B         | Kinetics 400  | 2.06 M     | 57.78%    | 0.53     | 57.18%      | 0.53       |                              
+| Full fine-tuning           | Video Swin-B  | Kinetics 400  | 87.64 M    | 50.99%    | -        | 68.07%      | -          |
+| Frozen                     | Video Swin-B  | Kinetics 400  | 0 M        | 24.13%    | 0.24     | 71.28%      | 0.71       |
+| LoRA                       | Video Swin-B  | Kinetics 400  | 0.75 M     | 38.34%    | 0.37     | 62.12%      | 0.60       |
+| BitFit                     | Video Swin-B  | Kinetics 400  | 1.09 M     | 45.94%    | 0.44     | 68.26%      | 0.65       |
+| AdaptFormer                | Video Swin-B  | Kinetics 400  | 1.56 M     | 40.80%    | 0.38     | 68.66%      | 0.64       |
+| Prefix-tuning              | Video Swin-B  | Kinetics 400  | 6.37 M     | 39.46%    | 0.32     | 56.13%      | 0.45       |
+| BAPAT                      | Video Swin-B  | Kinetics 400  | 6.18 M     | 53.36%    | 0.43     | 71.93%      | 0.58       |
 
 ### Benchmark results of dense prediction on COCO
 - Benchmark results on COCO. We evaluate 9 PETL algorithms with Swin-B models pre-trained on ImageNet-22K. 
