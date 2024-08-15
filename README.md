@@ -49,6 +49,8 @@
 
 - [Getting Started](#getting-started)
 
+- [Code Structure](#structure)
+
 - [Quick Start](#quick-start)
   
 - [Results and Checkpoints](#results)
@@ -245,7 +247,7 @@ mv swin_base_patch4_window7_224_22k.pth Swin_B_16.pth
 </tr>
 </tbody></table>
 
-## 💻 Structure of the V-PETL Bench (key files are marked with 👉):
+## 💻 <span id="structure"> *Structure of the V-PETL Bench (key files are marked with 👉)* </span>
 
 - `ImageClassification/configs`: handles config parameters for the experiments.
   
