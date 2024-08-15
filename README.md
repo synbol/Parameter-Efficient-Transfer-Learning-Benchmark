@@ -265,7 +265,11 @@ mv swin_base_patch4_window7_224_22k.pth Swin_B_16.pth
  
     * 👉`ImageClassification/models/vision_transformer_sct.py`: <u>a folder contains the same backbones in `vit_backbones` folder,</u> specified for SCT.
 
-- 👉`ImageClassification/train.py`: call this one for training and eval a model with a specified transfer type.
+- 👉`ImageClassification/train`: <u>a folder contains the `training file` folder,</u> 
+
+    * 👉`ImageClassification/train/train_model_adapter.py`: call this one for training and eval a model with a specified transfer type, specified for Adapter.
+
+    * 👉`ImageClassification/train/train_model_sct.py`: call this one for training and eval a model with a specified transfer type, specified for SCT.
 
 - `ImageClassification/Visualize`: Visualization Tools.
 
