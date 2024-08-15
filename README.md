@@ -75,32 +75,6 @@ Parameter-efficient transfer learning (PETL) methods show promise in adapting a 
 
 ## ⚙️ <span id="getting-started"> *Getting Started* </span>
 
-This is an example of how to set up V-PETL Bench locally. 
-
-To get a local copy up, running follow these simple example steps.
-
-### 👉 Environment Setup
-
-V-PETL Bench is built on pytorch, with torchvision, torchaudio, and timm, etc.
-
-- To install the required packages, you can create a conda environment.
-
-```sh
-conda create --name v-petl-bench python=3.8
-```
-
-- Activate conda environment.
-
-```sh
-conda activate v-petl-bench
-```
-
-- Use pip to install required packages.
-
-```sh
-pip install -r requirements.txt
-```
-
 ### 👉 Data Preparation
 
 #### 1. Image Classification Dataset
@@ -298,6 +272,59 @@ mv swin_base_patch4_window7_224_22k.pth Swin_B_16.pth
 ```
 
 ## 🐌 <span id="quick-start"> *Quick Start* </span>
+This is an example of how to set up V-PETL Bench locally. 
+
+To get a local copy up, running follow these simple example steps.
+
+### 👉 Install V-PETL Bench
+
+```sh
+git clone https://github.com/synbol/Parameter-Efficient-Transfer-Learning-Benchmark.git
+```
+
+### 👉 Environment Setup
+
+V-PETL Bench is built on pytorch, with torchvision, torchaudio, and timm, etc.
+
+- To install the required packages, you can create a conda environment.
+
+```sh
+conda create --name v-petl-bench python=3.8
+```
+
+- Activate conda environment.
+
+```sh
+conda activate v-petl-bench
+```
+
+- Use pip to install required packages.
+
+```sh
+cd Parameter-Efficient-Transfer-Learning-Benchmark
+
+pip install -r requirements.txt
+```
+
+### 👉 Training
+
+- You can test the performance of a PETL algorithm on a dataset.
+
+```sh
+python python train/train_model_sct.py --dataset cifar100 --task vtab --lr 0.012 --wd 0.6 --eval True --dpr 0.1 --tuning_mode $tuning_mode --model_type $model_type --model $model --model_checkpoint $model_checkpoint
+```
+
+- or you can test the performance of an PETL algorithm on all dataset
+
+```sh
+bash scripts/run_model_sct.sh
+```
+
+### 👉 Evaluation
+- You can evaluate the performance of your trained model.
+
+- You can also test the pre-trained checkpoints we provide. See ``Results and Checkpoints`` for download links.
+
 
 ## 🎯 <span id="results"> *Results and Checkpoints* </span>
 
