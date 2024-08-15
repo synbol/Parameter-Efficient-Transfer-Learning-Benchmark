@@ -273,6 +273,8 @@ mv swin_base_patch4_window7_224_22k.pth Swin_B_16.pth
  
   * `ImageClassification/Visualize/TSNE.py`: T-SNE visualization.
 
+- `ImageClassification/utils`: Creates logger, Set seed, etc.
+  
 ```sh
   ❗️Note❗️: If you want to create your own PETL algorithm, pay attention to `ImageClassification/models`.
 ```
