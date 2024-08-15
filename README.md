@@ -406,7 +406,7 @@ bash scripts/run_model_sct.sh
 ### Benchmark results of dense prediction on COCO
 - Benchmark results on COCO. We evaluate 9 PETL algorithms with Swin-B models pre-trained on ImageNet-22K. 
 
-- To obtain the checkpoint, please download it at [Download Link]().
+- To obtain the checkpoint, please download it at [Coming Soon]().
 
 | **Swin-B**         | **Params.** | **Memory** | **COCO  ($\mathrm{AP_{Box}}$)** | **COCO (PPT)** | **COCO  ($\mathrm{AP_{Mask}}$)** | **COCO (PPT)** |
 |----------------|----------------|------------|-------------------|--------|-------------|--------|
@@ -426,7 +426,7 @@ bash scripts/run_model_sct.sh
 ### Benchmark results of dense prediction on PASCAL VOC and ADE20K.
 - Benchmark results on PASCAL VOC and ADE20K. We evaluate 9 PETL algorithms with Swin-L models pre-trained on ImageNet-22K.
 
-- To obtain the checkpoint, please download it at [Download Link]().
+- To obtain the checkpoint, please download it at [Coming Soon]().
 
 
 | **Swin-L**             | **Params.** | **Memory (VOC)** | **Pascal VOC  ($\mathrm{AP_{Box}}$)** |Pascal VOC (PPT)| **ADE20K  ($\mathrm{mIoU}$)** | **ADE20K (PPT)** |
