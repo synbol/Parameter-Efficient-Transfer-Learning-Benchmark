@@ -251,11 +251,11 @@ mv swin_base_patch4_window7_224_22k.pth Swin_B_16.pth
   
   * 👉 `ImageClassification/config/vtab/cifar100.yaml`: <u>main config setups for experiments and explanation for each of dataset. </u> 
 
-- `ImageClassification/dataload`: loading and setup input datasets.
+- `ImageClassification/dataloader`: loading and setup input datasets.
 
-  * `ImageClassification/dataload/transforms`: Image transformations.
+  * `ImageClassification/dataloader/transforms`: Image transformations.
  
-  * `ImageClassification/dataload/loader`: Constructs the data loader for the given dataset.
+  * `ImageClassification/dataloader/loader`: Constructs the data loader for the given dataset.
 
 - `ImageClassification/models`: handles backbone archs and heads for different fine-tuning protocols 
 
