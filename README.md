@@ -251,7 +251,9 @@ mv swin_base_patch4_window7_224_22k.pth Swin_B_16.pth
 
 - `ImageClassification/configs`: handles config parameters for the experiments.
   
-  * 👉 `ImageClassification/config/vtab/cifar100.yaml`: <u>main config setups for experiments and explanation for each of dataset. </u> 
+  * 👉 `ImageClassification/config/vtab/cifar100.yaml`: <u>main config setups for experiments and explanation for each of dataset. </u>
+ 
+  * .....
 
 - `ImageClassification/dataloader`: loading and setup input datasets.
 
@@ -264,12 +266,24 @@ mv swin_base_patch4_window7_224_22k.pth Swin_B_16.pth
     * 👉`ImageClassification/models/vision_transformer_adapter.py`: <u>a folder contains the same backbones in `vit_backbones` folder,</u> specified for Adapter.
  
     * 👉`ImageClassification/models/vision_transformer_sct.py`: <u>a folder contains the same backbones in `vit_backbones` folder,</u> specified for SCT.
+ 
+    * .....
 
 - 👉`ImageClassification/train`: <u>a folder contains the `training file` folder,</u> 
 
     * 👉`ImageClassification/train/train_model_adapter.py`: call this one for training and eval a model with a specified transfer type, specified for Adapter.
 
     * 👉`ImageClassification/train/train_model_sct.py`: call this one for training and eval a model with a specified transfer type, specified for SCT.
+ 
+    * .....
+
+- `ImageClassification/scripts`: <u>a folder contains the `scripts file` folder,</u>
+
+    * `ImageClassification/scripts/run_vit_adapter.sh`: You can run the Adapter method on all datasets at once.
+ 
+    * `ImageClassification/scripts/run_vit_sct.sh`: You can run the Adapter method on all datasets at once.
+ 
+    * .....
 
 - `ImageClassification/Visualize`: Visualization Tools.
 
