@@ -1,0 +1,12 @@
+torch==1.13.1
+torchvision==0.14.1
+torchaudio==0.13.1
+avalanche-lib==0.1.0
+ipdb
+tqdm
+timm==0.6.5
+einops
+easydict
+pandas
+scipy
+pyyaml
