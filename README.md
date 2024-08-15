@@ -53,6 +53,8 @@
   
 - [Results and Checkpoints](#results)
 
+- [Community and Contact](#contact)
+
 - [Citation](#citation)
 
 
@@ -362,7 +364,13 @@ mv swin_base_patch4_window7_224_22k.pth Swin_B_16.pth
 | E$^3$VA                | 1.79 M         | 4819 MB          | 86.5%                | 0.81   | 49.64%                              | 0.46   |
 | Mona                   | 5.08 M         | 11958 MB         | 87.3%                | 0.73   | 51.36%                              | 0.43   |
 
+## 💬 <span id="contact"> *Community and Contact* </span>
 
+- The V-PETL Bench community is maintained by:
+
+  - Yi Xin (xinyi@smail.nju.edu.cn), Nanjing University.
+ 
+  - Siqi Luo (siqiluo@smail.nju.edu.cn), Shanghai Jiao Tong University.
 
 ## 📝 <span id="citation"> *Citation* </span>
 
