@@ -245,7 +245,7 @@ mv swin_base_patch4_window7_224_22k.pth Swin_B_16.pth
 </tr>
 </tbody></table>
 
-## Structure of the V-PETL Bench (key files are marked with 👉):
+## 💻 Structure of the V-PETL Bench (key files are marked with 👉):
 
 - `ImageClassification/configs`: handles config parameters for the experiments.
   
@@ -270,7 +270,10 @@ mv swin_base_patch4_window7_224_22k.pth Swin_B_16.pth
   * `ImageClassification/Visualize/AttentionMap.py`: Attention map visualization.
  
   * `ImageClassification/Visualize/TSNE.py`: T-SNE visualization.
-  
+
+```sh
+  ❗️Note❗️: If you want to create your own PETL algorithm, pay attention to `ImageClassification/models`.
+```
 
 ## 🐌 <span id="quick-start"> *Quick Start* </span>
 
