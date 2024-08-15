@@ -245,6 +245,33 @@ mv swin_base_patch4_window7_224_22k.pth Swin_B_16.pth
 </tr>
 </tbody></table>
 
+## Structure of the V-PETL Bench (key files are marked with 👉):
+
+- `ImageClassification/configs`: handles config parameters for the experiments.
+  
+  * 👉 `ImageClassification/config/vtab/cifar100.yaml`: <u>main config setups for experiments and explanation for each of dataset. </u> 
+
+- `ImageClassification/dataload`: loading and setup input datasets.
+
+  * `ImageClassification/dataload/transforms`: Image transformations.
+ 
+  * `ImageClassification/dataload/loader`: Constructs the data loader for the given dataset.
+
+- `ImageClassification/models`: handles backbone archs and heads for different fine-tuning protocols 
+
+    * 👉`ImageClassification/models/vision_transformer_adapter.py`: <u>a folder contains the same backbones in `vit_backbones` folder,</u> specified for Adapter.
+ 
+    * 👉`ImageClassification/models/vision_transformer_sct.py`: <u>a folder contains the same backbones in `vit_backbones` folder,</u> specified for SCT.
+
+- 👉`ImageClassification/train.py`: call this one for training and eval a model with a specified transfer type.
+
+- `ImageClassification/Visualize`: Visualization Tools.
+
+  * `ImageClassification/Visualize/AttentionMap.py`: Attention map visualization.
+ 
+  * `ImageClassification/Visualize/TSNE.py`: T-SNE visualization.
+  
+
 ## 🐌 <span id="quick-start"> *Quick Start* </span>
 
 ## 🎯 <span id="results"> *Results and Checkpoints* </span>
