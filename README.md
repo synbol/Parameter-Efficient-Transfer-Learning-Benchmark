@@ -308,13 +308,13 @@ pip install -r requirements.txt
 
 ### 👉 Training
 
-- You can test the performance of a PETL algorithm on a dataset.
+- You can train with a PETL algorithm on a dataset.
 
 ```sh
 python python train/train_model_sct.py --dataset cifar100 --task vtab --lr 0.012 --wd 0.6 --eval True --dpr 0.1 --tuning_mode $tuning_mode --model_type $model_type --model $model --model_checkpoint $model_checkpoint
 ```
 
-- or you can test the performance of an PETL algorithm on all dataset
+- or you can train with a PETL an PETL algorithm on all dataset
 
 ```sh
 bash scripts/run_model_sct.sh
