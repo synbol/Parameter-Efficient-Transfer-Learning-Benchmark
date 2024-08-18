@@ -1,4 +1,0 @@
-pyyaml
-scipy
-pandas
-ipdb
