@@ -308,6 +308,7 @@ pip install -r requirements.txt
 
 ### 👉 Training and Evaluation
 
+#### Training and Evaluation Demo
 - We provide a specific training and evaluation demo, taking LoRA on VTAB Cifar100 as an example.
 
 ```sh
@@ -363,6 +364,7 @@ model = train.train(config, model, criterion, train_dl, opt, scheduler, logger, 
 eval_acc = train.test(model, test_dl, 'vtab')
 ```
 
+#### Call V-PETL Training and Evaluation file
 - You can train with a PETL algorithm on a dataset.
 
 ```sh
@@ -374,12 +376,6 @@ python python train/train_model_sct.py --dataset cifar100 --task vtab --lr 0.012
 ```sh
 bash scripts/run_model_sct.sh
 ```
-
-### 👉 Evaluation
-- You can evaluate the performance of your trained model.
-
-- You can also test the pre-trained checkpoints we provide. See ``Results and Checkpoints`` for download links.
-
 
 ## 🎯 <span id="results"> *Results and Checkpoints* </span>
 
