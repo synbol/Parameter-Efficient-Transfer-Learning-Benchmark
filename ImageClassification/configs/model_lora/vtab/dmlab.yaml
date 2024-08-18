@@ -1,0 +1,8 @@
+name: dmlab_channel_lora_001
+class_num: 6
+train_aug: True
+topN: 96
+labelsmoothing: 0.
+batch_size: 64
+epochs: 100
+warmup_epochs: 10

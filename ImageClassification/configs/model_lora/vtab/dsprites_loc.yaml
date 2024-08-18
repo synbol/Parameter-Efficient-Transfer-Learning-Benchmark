@@ -1,0 +1,8 @@
+name: dsprites_loc_lora_001
+class_num: 16
+train_aug: False
+topN: 96
+labelsmoothing: 0.
+batch_size: 64
+epochs: 100
+warmup_epochs: 10

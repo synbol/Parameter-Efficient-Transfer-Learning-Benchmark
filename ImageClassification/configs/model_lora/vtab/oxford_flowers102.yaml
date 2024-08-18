@@ -1,0 +1,8 @@
+name: oxford_flowers102_lora_001
+class_num: 102
+train_aug: True
+topN: 96
+labelsmoothing: 0.1
+batch_size: 64
+epochs: 100
+warmup_epochs: 10

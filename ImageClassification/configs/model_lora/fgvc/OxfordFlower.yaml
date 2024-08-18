@@ -1,0 +1,8 @@
+name: OxfordFlower_001
+class_num: 102
+train_aug: False
+topN: 96
+labelsmoothing: 0.0
+batch_size: 128
+epochs: 100
+warmup_epochs: 10
