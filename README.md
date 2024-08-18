@@ -306,7 +306,62 @@ cd Parameter-Efficient-Transfer-Learning-Benchmark
 pip install -r requirements.txt
 ```
 
-### 👉 Training
+### 👉 Training and Evaluation
+
+- We provide a specific training and evaluation demo, taking LoRA on VTAB Cifar100 as an example.
+
+```sh
+import sys
+sys.path.append("Parameter-Efficient-Transfer-Learning-Benchmark")
+import torch
+from ImageClassification import utils
+from ImageClassification.dataloader import vtab
+from ImageClassification.train import train
+# get lora methods
+from timm.scheduler.cosine_lr import CosineLRScheduler
+from ImageClassification.models import vision_transformer_lora
+import timm
+
+
+# path to save model and logs
+exp_base_path = '../output'
+utils.mkdirss(exp_base_path)
+
+# create logger
+logger = utils.create_logger(log_path=exp_base_path, log_name='training')
+
+# dataset config parameter
+config = utils.get_config('model_lora', 'vtab', 'cifar100')
+
+# get vtab dataset
+data_path = '/home/ma-user/work/haozhe/synbol/vtab-1k'
+train_dl, test_dl = vtab.get_data(data_path, 'cifar100', logger, evaluate=False, train_aug=config['train_aug'], batch_size=config['batch_size'])
+
+# get pretrained model
+model = timm.models.create_model('vit_base_patch16_224_in21k_lora', checkpoint_path='./released_models/ViT-B_16.npz', drop_path_rate=0.1, tuning_mode='lora')
+model.reset_classifier(config['class_num'])
+
+# training parameters
+trainable = []
+for n, p in model.named_parameters():
+    if 'linear_a' in n or 'linear_b' in n or 'head' in n:
+        trainable.append(p)
+        logger.info(str(n))
+    else:
+        p.requires_grad = False
+opt = torch.optim.AdamW(trainable, lr=1e-4, weight_decay=5e-2)
+scheduler = CosineLRScheduler(opt, t_initial=config['epochs'], warmup_t=config['warmup_epochs'], lr_min=1e-5, warmup_lr_init=1e-6, cycle_decay = 0.1)
+
+
+# crossEntropyLoss function
+criterion = torch.nn.CrossEntropyLoss()
+
+# training
+model = train.train(config, model, criterion, train_dl, opt, scheduler, logger, config['epochs'], 'vtab', 'cifar100')
+
+# evaluation
+eval_acc = train.test(model, test_dl, 'vtab')
+```
 
 - You can train with a PETL algorithm on a dataset.
 
