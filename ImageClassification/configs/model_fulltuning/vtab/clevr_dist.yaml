@@ -1,0 +1,7 @@
+name: clevr_dist_fulltuning_001
+class_num: 6
+train_aug: False
+labelsmoothing: 0.
+batch_size: 64
+epochs: 100
+warmup_epochs: 10

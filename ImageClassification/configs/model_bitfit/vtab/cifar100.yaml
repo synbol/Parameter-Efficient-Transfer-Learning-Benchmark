@@ -1,0 +1,7 @@
+name: cifar_bitfit_001
+class_num: 100
+train_aug: False
+labelsmoothing: 0.1
+batch_size: 64
+epochs: 100
+warmup_epochs: 10

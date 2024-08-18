@@ -1,0 +1,7 @@
+name: clevr_count_bitfit_001
+class_num: 8
+train_aug: True
+labelsmoothing: 0.
+batch_size: 64
+epochs: 100
+warmup_epochs: 10
