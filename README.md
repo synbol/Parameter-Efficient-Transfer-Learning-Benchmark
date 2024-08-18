@@ -382,7 +382,7 @@ bash scripts/run_model_sct.sh
 ### Benchmark results of image classification on FGVC
 - We evaluate 13 PETL algorithms on five datasets with ViT-B/16 models pre-trained on ImageNet-21K.
 
-- To obtain the checkpoint, please download it at [Download Link]().
+- To obtain the checkpoint, please download it at [Download Link](https://huggingface.co/XiN0919/v-pelt-benchmark/tree/main).
 
 | **Method**  | CUB-200-2011 | NABirds | Oxford Flowers | Stanford Dogs | Stanford Cars | Mean | Params.| PPT |
 |-----------------------|--------------|---------|----------------|---------------|---------------|------|---------------|-----|
@@ -408,7 +408,7 @@ bash scripts/run_model_sct.sh
 
 - Benchmark results on VTAB. We evaluate 18 PETL algorithms on 19 datasets with ViT-B/16 models pre-trained on ImageNet-21K.
 
-- To obtain the checkpoint, please download it at [Download Link]().
+- To obtain the checkpoint, please download it at [Download Link](https://huggingface.co/XiN0919/v-pelt-benchmark/tree/main).
   
 | Method | CIFAR-100 | Caltech101 | DTD | Flowers102 | Pets | SVHN | Sun397 | Patch Camelyon | EuroSAT | Resisc45 | Retinopathy | Clevr/count | Clevr/distance | DMLab | KITTI/distance | dSprites/loc | dSprites/ori | SmallNORB/azi | SmallNORB/ele | Mean | Params. | PPT |
 | --- |  --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -438,7 +438,7 @@ bash scripts/run_model_sct.sh
 ### Benchmark results of video action recognition  on SSv2 and HMDB51.
 - Benchmark results on SSv2 and HMDB51. We evaluate 5 PETL algorithms with ViT-B from VideoMAE and Video Swin Transformer.
 
-- To obtain the checkpoint, please download it at [Download Link]().
+- To obtain the checkpoint, please download it at [Download Link](https://huggingface.co/XiN0919/v-pelt-benchmark/tree/main).
 
 | Method                     | Model         | Pre-training  | Params. | SSv2 (Top1)  | SSv2 (PPT)| HMDB51 (Top1) | HMDB51 (PPT) |
 |----------------------------|---------------|---------------|------------|-----------|----------|-------------|------------|                      
