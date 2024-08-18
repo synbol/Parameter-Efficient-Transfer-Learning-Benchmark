@@ -1,0 +1,9 @@
+name: caltech101_SCT_attn_001
+class_num: 102
+train_aug: False
+scale: 1.0
+scaleonx: False
+labelsmoothing: 0.1
+batch_size: 64
+epochs: 100
+warmup_epochs: 10

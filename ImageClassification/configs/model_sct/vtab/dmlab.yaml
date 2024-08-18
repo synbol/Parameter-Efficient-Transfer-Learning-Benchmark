@@ -1,0 +1,9 @@
+name: dmlab_SCT_attn_001
+class_num: 6
+train_aug: True
+scale: 0.3
+scaleonx: False
+labelsmoothing: 0.
+batch_size: 64
+epochs: 100
+warmup_epochs: 10

@@ -1,0 +1,9 @@
+name: smallnorb_ele_SCT_attn_001
+class_num: 18
+scaleonx: True
+scale: 0.65
+scaleonx: True
+labelsmoothing: 0.
+batch_size: 32
+epochs: 100
+warmup_epochs: 10

@@ -1,0 +1,9 @@
+name: oxford_iiit_pet_SCT_attn_001
+class_num: 37
+train_aug: True
+scale: 0.2
+scaleonx: False
+labelsmoothing: 0.1
+batch_size: 32
+epochs: 100
+warmup_epochs: 10

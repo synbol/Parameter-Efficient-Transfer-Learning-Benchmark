@@ -1,0 +1,9 @@
+name: cifar_SCT_attn_001
+class_num: 100
+train_aug: False
+scale: 0.4
+scaleonx: False
+labelsmoothing: 0.1
+batch_size: 64
+epochs: 100
+warmup_epochs: 10

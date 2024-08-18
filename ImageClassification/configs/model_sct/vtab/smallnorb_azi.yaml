@@ -1,0 +1,9 @@
+name: smallnorb_azi_SCT_attn_001
+class_num: 18
+train_aug: False
+scale: 1.0
+scaleonx: True
+labelsmoothing: 0.
+batch_size: 32
+epochs: 100
+warmup_epochs: 10

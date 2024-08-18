@@ -1,0 +1,9 @@
+name: clevr_count_SCT_attn_001
+class_num: 8
+train_aug: True
+scale: 0.52
+scaleonx: True
+labelsmoothing: 0.
+batch_size: 64
+epochs: 100
+warmup_epochs: 10

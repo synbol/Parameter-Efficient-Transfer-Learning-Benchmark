@@ -1,0 +1,9 @@
+name: diabetic_retinopathy_SCT_attn_001
+class_num: 5
+train_aug: True
+scale: 0.75
+scaleonx: False
+labelsmoothing: 0.1
+batch_size: 64
+epochs: 100
+warmup_epochs: 10

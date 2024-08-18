@@ -1,0 +1,9 @@
+name: patch_camelyon_SCT_attn_001
+class_num: 2
+train_aug: True
+scale: 0.17
+scaleonx: False
+labelsmoothing: 0.1
+batch_size: 32
+epochs: 100
+warmup_epochs: 10

@@ -1,0 +1,8 @@
+name: oxford_iiit_pet_adapter_001
+class_num: 37
+train_aug: True
+topN: 96
+labelsmoothing: 0.1
+batch_size: 64
+epochs: 100
+warmup_epochs: 10

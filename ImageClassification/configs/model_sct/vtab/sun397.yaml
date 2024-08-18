@@ -1,0 +1,9 @@
+name: sun397_SCT_attn_001
+class_num: 397
+train_aug: False
+scale: 0.15
+scaleonx: False
+labelsmoothing: 0.1
+batch_size: 32
+epochs: 100
+warmup_epochs: 10
